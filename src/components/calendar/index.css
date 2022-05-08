@@ -1,0 +1,113 @@
+.calendar-wrap {
+  background-color: #fff;;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.calendar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #333;
+}
+  
+.calendar-week {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+}
+  
+.calendar-week-item {
+  width: calc(100% / 7);
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+}
+  
+.calendar-session {
+  position: relative;
+  overflow: hidden;
+  padding: 5px 0;
+}
+  
+.calendar-session-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+  
+.calendar-session-dateWrap {
+  width: calc(100% / 7);
+  padding-bottom: 12px;
+}
+
+.calendar-session-dateBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.calendar-session-solar {
+  flex-shrink: 0;
+  height: 30px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #333;
+}
+
+.calendar-session-lunar {
+  height: 20px;
+  line-height: 10px;
+  font-size: 10px;
+  color: #999;
+  text-align: center;
+}
+
+.calendar-session-dateTop {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+  
+.calendar-session-dateChecked {
+  background-color: #1677FF;
+}
+  
+.calendar-session-dateChecked .calendar-session-solar, .calendar-session-dateChecked .calendar-session-lunar {
+  color: #fff;
+}
+
+.calendar-session-dateToday {
+  background-color: #1677FF;
+}
+  
+.calendar-session-dateToday .calendar-session-solar, .calendar-session-dateToday .calendar-session-lunar {
+  color: #fff;
+}
+  
+.calendar-session-dateNotInMonth .calendar-session-solar, .calendar-session-dateNotInMonth .calendar-session-lunar {
+  color: #ccc;
+}
+  
+.calendar-session-dateBot {
+  margin-top: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+}
+  
+ .calendar-session-dateBot-bgColor {
+   background-color: #d8d8d8;
+ } 
